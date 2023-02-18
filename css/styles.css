@@ -1,0 +1,61 @@
+/* Стилі елементів HTML */
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Класи елементів */
+
+.nav {
+  display: inline;
+}
+
+.nav-list {
+  display: inline;
+}
+
+.nav-list-link {
+}
+
+/* button */
+.button {
+  width: 165px;
+  height: 60px;
+  border: 1px solid #626262;
+}
+
+.main-list {
+}
+
+.main-item {
+}
+
+.main-list-title {
+  font-size: 30px;
+  line-height: 40px;
+  color: #626262;
+}
+
+.main-link {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b4ad9e;
+}
+
+.main-list-text {
+  font-size: 14px;
+  line-height: 19px;
+  color: #626262;
+}
