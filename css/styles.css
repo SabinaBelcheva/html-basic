@@ -3,27 +3,104 @@
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
+  font-size: 14px;
+  color: #626262;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 /* Класи елементів */
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 147px;
+  padding-right: 147px;
+}
+
+/* Меню навігації */
+
 .nav {
-  display: inline;
+  margin-top: 70px;
+  margin-bottom: 90px;
 }
 
 .nav-list {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-list-link {
+.nav-list-item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: #03a9f4;
+}
+
+/* Секція Main */
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 130px 65px;
+}
+
+.main-item {
+  flex-basis: calc((100% - 65px) / 2);
+}
+
+.main-img {
+  margin-bottom: 62px;
+}
+
+.main-category {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  line-height: 16px;
+  color: #b4ad9e;
+  margin-bottom: 32px;
+}
+
+.main-list-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #626262;
+  margin-bottom: 40px;
+}
+
+.main-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #626262;
+  width: 420px;
 }
 
 /* button */
@@ -31,31 +108,11 @@ ul {
   width: 165px;
   height: 60px;
   border: 1px solid #626262;
+  margin-top: 94px;
+  margin-bottom: 66px;
 }
 
-.main-list {
-}
-
-.main-item {
-}
-
-.main-list-title {
-  font-size: 30px;
-  line-height: 40px;
-  color: #626262;
-}
-
-.main-link {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #b4ad9e;
-}
-
-.main-list-text {
-  font-size: 14px;
-  line-height: 19px;
-  color: #626262;
+.btn {
+  display: flex;
+  justify-content: center;
 }
