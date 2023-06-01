@@ -1,118 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML + CSS practices</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Секція Хедер -->
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">LIFESTYLE</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">PHOTODIARY</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">MUSIC</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">TRAVEL</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <!-- Секція Мейн -->
-    <main>
-      <div class="container">
-        <ul class="main-list">
-          <li class="main-item">
-            <img class="main-img" src="./img/1.jpg" alt="" />
-            <p class="main-category">LIFESTYLE</p>
-            <h2 class="main-list-title">More than just a music festival</h2>
-            <p class="main-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML + CSS practices</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Секція Хедер -->
+  <header>
+    <div class="container">
+      <button class="menu-button" type="button" data-menu-button>
+        <svg class="menu-icon" width="40px" height="40px">
+          <use href="./img/symbol-defs.svg#icon-menu_button"></use>
+        </svg>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#">LIFESTYLE</a>
           </li>
-          <li class="main-item">
-            <img class="main-img" src="./img/2.jpg" alt="" />
-            <p class="main-category">LIFESTYLE</p>
-            <h2 class="main-list-title">Life tastes better with coffee</h2>
-            <p class="main-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#">PHOTODIARY</a>
           </li>
-          <li class="main-item">
-            <img class="main-img" src="./img/3.jpg" alt="" />
-            <p class="main-category">PHOTODAIRY</p>
-            <h2 class="main-list-title">American dream</h2>
-            <p class="main-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#">MUSIC</a>
           </li>
-          <li class="main-item">
-            <img class="main-img" src="./img/4.jpg" alt="" />
-            <p class="main-category">PHOTODAIRY</p>
-            <h2 class="main-list-title">A day exploring the Alps</h2>
-            <p class="main-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
-          </li>
-          <li class="main-item">
-            <img class="main-img" src="./img/5.jpg" alt="" />
-            <p class="main-category">LIFESTYLE</p>
-            <h2 class="main-list-title">Top 10 song for running</h2>
-            <p class="main-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
-          </li>
-          <li class="main-item">
-            <img class="main-img" src="./img/6.jpg" alt="" />
-            <p class="main-category">LIFESTYLE</p>
-            <h2 class="main-list-title">Cold winter days</h2>
-            <p class="main-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#">TRAVEL</a>
           </li>
         </ul>
-      </div>
-      <div class="btn">
-        <button type="button" class="button">Load more</button>
-      </div>
-    </main>
-  </body>
+      </nav>
+    </div>
+
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu" data-menu></div>
+    <div class="container">
+      <button class="menu-button-close" type="button" data-menu-button>
+        <svg class="menu-icon-close" width="40px" height="40px">
+          <use href="./img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">LIFESTYLE</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">PHOTODIARY</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">MUSIC</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">TRAVEL</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Секція Мейн -->
+  <main>
+    <div class="container">
+      <ul class="main-list">
+        <li class="main-item">
+          <img class="main-img" src="./img/1.jpg" alt="" />
+          <p class="main-category">LIFESTYLE</p>
+          <h2 class="main-list-title">More than just a music festival</h2>
+          <p class="main-list-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea.
+          </p>
+        </li>
+        <li class="main-item">
+          <img class="main-img" src="./img/2.jpg" alt="" />
+          <p class="main-category">LIFESTYLE</p>
+          <h2 class="main-list-title">Life tastes better with coffee</h2>
+          <p class="main-list-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea.
+          </p>
+        </li>
+        <li class="main-item">
+          <img class="main-img" src="./img/3.jpg" alt="" />
+          <p class="main-category">PHOTODAIRY</p>
+          <h2 class="main-list-title">American dream</h2>
+          <p class="main-list-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea.
+          </p>
+        </li>
+        <li class="main-item">
+          <img class="main-img" src="./img/4.jpg" alt="" />
+          <p class="main-category">PHOTODAIRY</p>
+          <h2 class="main-list-title">A day exploring the Alps</h2>
+          <p class="main-list-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea.
+          </p>
+        </li>
+        <li class="main-item">
+          <img class="main-img" src="./img/5.jpg" alt="" />
+          <p class="main-category">LIFESTYLE</p>
+          <h2 class="main-list-title">Top 10 song for running</h2>
+          <p class="main-list-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea.
+          </p>
+        </li>
+        <li class="main-item">
+          <img class="main-img" src="./img/6.jpg" alt="" />
+          <p class="main-category">LIFESTYLE</p>
+          <h2 class="main-list-title">Cold winter days</h2>
+          <p class="main-list-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="btn">
+      <button type="button" class="button">Load more</button>
+    </div>
+  </main>
+  <script src="./js/menu.js"></script>
+</body>
+
 </html>
