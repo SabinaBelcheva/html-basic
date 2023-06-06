@@ -38,6 +38,8 @@ img {
 .container {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Mobile 480+ */
@@ -45,11 +47,11 @@ img {
 @media screen and (min-widht: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
 /* Tablet 768+ */
+
 @media screen and (min-widht: 768px) {
   .container {
     width: 768px;
@@ -57,22 +59,21 @@ img {
 }
 
 /* Desktop 1200+ */
+
 @media screen and (min-widht: 1200px) {
   .container {
     width: 1200px;
   }
 }
 
-/* .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 147px;
-  padding-right: 147px;
-} */
-
 /* Меню навігації */
 
 @media screen and (max-width: 767px) {
+  .mobile-container {
+    position: relative;
+    padding: 80px;
+  }
+
   .nav {
     display: none;
   }
@@ -84,9 +85,10 @@ img {
   }
 
   .menu-button-close {
-    /* position: absolute;
-    top: 15px;
-    left: 15px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
     background-color: transparent;
     border: none;
   }
@@ -103,14 +105,29 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
+
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
     transition: opacity 250ms ease-in, transform 250ms ease-in;
+  }
+
+  .mobile-nav-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: none;
   }
 }
 
@@ -135,6 +152,7 @@ img {
 }
 
 /* Секція Main */
+
 .main-list {
   display: flex;
   flex-wrap: wrap;
